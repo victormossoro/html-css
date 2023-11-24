@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário #7</title>
+    <style>
+        * {
+            background-color:azure;
+            font-family: Arial, sans-serif, sans-serif;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+            <option value="" selected>---Escolha---</option>
+                <optgroup label="Suldeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+            </label>
+            
+            <optgroup label="Nordeste">
+                <option value="CE">Ceará</option>
+                <option value="PB">Paraíba</option>
+                <option value="MA">Maranhão</option>
+                <option value="AL">Alagoas</option>
+            </label>
+            </select>
+        </p>
+
+        <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="listaprof">
+        <datalist id="listaprof">
+            <option>Admnistrador</option>
+            <option>Empresário</option>
+            <option>Estudante</option>
+            <option>Professor</option>
+            <option>Analista</option>
+        </datalist>
+        </p>
+
+        <p><label for="imsg">Mensagem</label><Br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">Digite aqui</textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">            
+        </p>
+
+    </form>
+</body>
+</html>

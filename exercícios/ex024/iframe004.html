@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum illum temporibus architecto laborum unde porro beatae impedit? Odit, assumenda tenetur laboriosam quas dolorum ipsa voluptatum cumque. Harum, numquam repellat.</p>
+
+    <ul>
+        <li><a href="iframe001.html" target="frame">Página #1</a></li>
+        <li><a href="iframe002.html" target="frame">Página #2</a></li>
+        <li><a href="iframe003.html" target="frame">Página #3</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda qui magni nisi architecto dolorem commodi est, ipsam laborum voluptatem? At nisi fugiat, facere cupiditate eligendi perferendis ullam est eius?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quod iusto corporis praesentium aut dignissimos, laboriosam assumenda, aspernatur at id dolorum obcaecati atque et eveniet sapiente sed, enim ex similique?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit assumenda qui magni nisi architecto dolorem commodi est, ipsam laborum voluptatem? At nisi fugiat, facere cupiditate eligendi perferendis ullam est eius?</p><img src='imagens/bandeira-brasil.png'>" frameborder="0" height="600px">
+        <p>Infelizmente seu navegador não é compatível!</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minus quaerat eaque? Veritatis illo hic quasi a ducimus eum quae omnis eos facilis delectus, explicabo minus incidunt recusandae dicta vitae.</p>
+</body>
+</html>

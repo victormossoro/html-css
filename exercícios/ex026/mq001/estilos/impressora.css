@@ -1,0 +1,21 @@
+@charset "UTH-8";
+/* estilo para impressoras */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: 'Este artigo foi impresso do site www.victormossoro.com.br';
+}

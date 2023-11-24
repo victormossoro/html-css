@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário #2</title>
+    <style>
+        * {
+            background-color: whitesmoke;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            font-size: medium;
+            border-radius: 10px;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste 2 de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="10" placeholder="seu nome aqui">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="4" placeholder="sua senha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
